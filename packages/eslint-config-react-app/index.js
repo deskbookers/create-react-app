@@ -89,7 +89,7 @@ module.exports = {
 
   plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'no-unused-vars-rest'],
 
-  extends: ['airbnb'],
+  extends: ['airbnb', 'react-app'],
 
   env: {
     browser: true,
