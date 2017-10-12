@@ -1,6 +1,6 @@
 {
   "name": "deskbookers-react-scripts",
-  "version": "10.0.25",
+  "version": "10.0.26",
   "description": "Configuration and scripts for Create React App.",
   "repository": "deskbookers/create-react-app",
   "license": "MIT",
@@ -61,7 +61,6 @@
     "url-loader": "0.6.2",
     "webpack": "3.5.1",
     "webpack-dev-server": "2.8.2",
-    "webpack-dotenv-plugin": "^2.0.2",
     "webpack-manifest-plugin": "1.2.1",
     "whatwg-fetch": "2.0.3"
   },
