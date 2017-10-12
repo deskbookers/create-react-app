@@ -1,6 +1,6 @@
 {
   "name": "deskbookers-eslint-config-react-app",
-  "version": "20.0.3",
+  "version": "20.0.4",
   "description": "ESLint configuration used by Create React App",
   "repository": "deskbookers/create-react-app",
   "license": "MIT",
