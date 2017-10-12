@@ -1,6 +1,6 @@
 {
   "name": "deskbookers-eslint-config-react-app",
-  "version": "20.0.6",
+  "version": "20.0.7",
   "description": "ESLint configuration used by Create React App",
   "repository": "deskbookers/create-react-app",
   "license": "MIT",
@@ -9,7 +9,7 @@
   ],
   "peerDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.1.1",
+    "eslint": "^3.0.0",
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
