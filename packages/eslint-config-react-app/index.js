@@ -87,7 +87,9 @@ module.exports = {
 
   parser: 'babel-eslint',
 
-  plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
+  plugins: ['import', 'flowtype', 'jsx-a11y', 'react', 'no-unused-vars-rest'],
+
+  extends: ['airbnb'],
 
   env: {
     browser: true,
@@ -108,6 +110,18 @@ module.exports = {
   },
 
   rules: {
+    semi: [2, 'never'],
+    'comma-dangle': 0,
+    'max-len': 0,
+    'no-shadow': 0,
+    'arrow-body-style': 0,
+    'arrow-parens': 0,
+    'global-require': 0,
+    'no-confusing-arrow': 0,
+    'no-param-reassign': 0,
+    'no-constant-condition': 0,
+    'no-underscore-dangle': 0,
+    'no-empty': 0,
     // http://eslint.org/docs/rules/
     'array-callback-return': 'warn',
     'default-case': ['warn', { commentPattern: '^no default$' }],
@@ -178,6 +192,7 @@ module.exports = {
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
     'no-unexpected-multiline': 'warn',
     'no-unreachable': 'warn',
+    'no-console': 0,
     'no-unused-expressions': [
       'warn',
       {
@@ -241,11 +256,17 @@ module.exports = {
     ],
 
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
-    'import/first': 'error',
+    'import/first': 0,
     'import/no-amd': 'error',
     'import/no-webpack-loader-syntax': 'error',
+    'import/no-dynamic-require': 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/prefer-default-export': 0,
+
+    'class-methods-use-this': 0,
 
     // https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
+    'react/require-default-props': 0,
     'react/jsx-no-comment-textnodes': 'warn',
     'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }],
     'react/jsx-no-target-blank': 'warn',
@@ -266,8 +287,26 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
     'react/require-render-return': 'error',
     'react/style-prop-object': 'warn',
+    'react/no-array-index-key': 0,
+    'react/sort-comp': 0,
+    'react/prefer-stateless-function': 0,
+    'react/prop-types': 0,
+    'react/forbid-prop-types': 0,
+    'react/jsx-no-bind': 0,
+    'react/no-unused-prop-types': 0,
+    'react/no-danger': 0,
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+
+    'no-unused-vars-rest/no-unused-vars': [
+      'error',
+      { ignoreDestructuredVarsWithRest: true },
+    ],
+    'space-before-function-paren': [2, 'always'],
 
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/tree/master/docs/rules
+    'jsx-a11y/no-static-element-interactions': 0,
+    'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/html-has-lang': 0,
     'jsx-a11y/accessible-emoji': 'warn',
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/anchor-has-content': 'warn',
