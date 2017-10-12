@@ -1,6 +1,6 @@
 {
   "name": "deskbookers-react-scripts",
-  "version": "10.0.19",
+  "version": "10.0.20",
   "description": "Configuration and scripts for Create React App.",
   "repository": "deskbookers/create-react-app",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
     "eslint": "4.4.1",
-    "deskbookers-eslint-config-react-app": "^20.0.3",
+    "deskbookers-eslint-config-react-app": "^20.0.5",
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.35.0",
     "eslint-plugin-import": "2.7.0",
