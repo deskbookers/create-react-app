@@ -141,7 +141,9 @@ module.exports = {
               // TODO: consider separate config for production,
               // e.g. to enable no-console and no-debugger only in production.
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [
+                  require.resolve('deskbookers-eslint-config-react-app'),
+                ],
               },
               ignore: false,
               useEslintrc: false,
@@ -259,7 +261,7 @@ module.exports = {
                         modules: true,
                         localIdentName: '[name]__[local]___[hash:base64:5]',
                         minimize: true,
-                        sourceMap: shouldUseSourceMap
+                        sourceMap: shouldUseSourceMap,
                       },
                     },
                     {

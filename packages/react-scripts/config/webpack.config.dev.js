@@ -135,7 +135,9 @@ module.exports = {
               eslintPath: require.resolve('eslint'),
               // @remove-on-eject-begin
               baseConfig: {
-                extends: [require.resolve('eslint-config-react-app')],
+                extends: [
+                  require.resolve('deskbookers-eslint-config-react-app'),
+                ],
               },
               ignore: false,
               useEslintrc: false,
@@ -225,7 +227,7 @@ module.exports = {
                   parser: 'sugarss',
                   importLoaders: 1,
                   modules: true,
-                  localIdentName: '[name]__[local]___[hash:base64:5]'
+                  localIdentName: '[name]__[local]___[hash:base64:5]',
                 },
               },
               {
